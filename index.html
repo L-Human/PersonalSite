@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ryuga</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="Main.css" />
+</head>
+<body>
+<nav id="nav">
+  <a href="#home" class="nav-logo">Ryuga</a>
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Хиро -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-tag reveal">Developer &amp; Designer</div>
+    <h1 class="hero-name reveal reveal-delay-1">
+      Ryu<span>ga</span>
+    </h1>
+    <p class="hero-desc reveal reveal-delay-2">
+      Building minimal, dark and clean interfaces.<br/>
+      Currently learning Go backend.
+    </p>
+    <div class="hero-cta reveal reveal-delay-3">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- Проджекты -->
+<section id="projects" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-num">001</div>
+      <div class="project-name">Bio Link</div>
+      <p class="project-desc">Minimal portfolio and link-in-bio site. Built with pure HTML/CSS, upgrading to Go backend.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Go</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">002</div>
+      <div class="project-name">Dark UI Kit</div>
+      <p class="project-desc">Component system for dark interfaces. Focused on typography and micro-interactions.</p>
+      <div class="project-tags">
+        <span class="tag">UI</span>
+        <span class="tag">Design</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-num">003</div>
+      <div class="project-name">Go API</div>
+      <p class="project-desc">REST API on Go. Learning project — contact form, analytics, dynamic content serving.</p>
+      <div class="project-tags">
+        <span class="tag">Go</span>
+        <span class="tag">REST</span>
+        <span class="tag">WIP</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-num">004</div>
+      <div class="project-name">Next Project</div>
+      <p class="project-desc">Coming soon. Something interesting is being built right now.</p>
+      <div class="project-tags">
+        <span class="tag">TBA</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </div>
+</section>
+
+<!-- Обо мне -->
+<section id="about" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">About</h2>
+  </div>
+  <div class="about-layout">
+    <div class="about-text reveal">
+      <p>I'm a developer with a <em>strong aesthetic sense</em>. I believe that good interfaces should be invisible — they get out of the way and let the content speak.</p>
+      <p>Currently expanding from frontend into <em>backend development with Go</em>. This very site is my learning playground — each new feature comes from something I just learned.</p>
+      <p>Minimal. Dark. Clean. That's the ethos.</p>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="about-stack">
+        <div class="stack-item">
+          <span class="stack-name">HTML / CSS</span>
+          <span class="stack-status active">Proficient</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">JavaScript</span>
+          <span class="stack-status active">Proficient</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">Go</span>
+          <span class="stack-status">Learning</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">REST API</span>
+          <span class="stack-status">Learning</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">PostgreSQL</span>
+          <span class="stack-status">Planned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Contact</h2>
+  </div>
+  <div class="contact-layout">
+    <div>
+      <div class="contact-links reveal">
+        <a href="https://t.me/LHidekiRyuga" class="contact-link">
+          <span>Telegram</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/L-Human" class="contact-link">
+          <span>GitHub</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="samrazvivaesha@gmail.com" class="contact-link">
+          <span>Email</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <!-- 
+        TODO (Go backend):
+        Поменять action на "/api/contact" и добавь метод method="POST"
+        когда напишу обработчик на Go.
+      -->
+      <form class="form-grid" onsubmit="handleSubmit(event)">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required/>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required/>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea rows="4" placeholder="What's on your mind..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary" style="cursor:pointer;border:none;">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-left">Ryuga &copy; 2025</div>
+  <div class="footer-right">Built with HTML + CSS &middot; Go backend coming soon</div>
+</footer>
+<script src="Main.js"></script>
+</body>
+</html>
